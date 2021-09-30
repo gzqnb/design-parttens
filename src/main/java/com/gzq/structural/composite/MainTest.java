@@ -1,0 +1,19 @@
+package com.gzq.structural.composite;
+
+public class MainTest {
+    public static void main(String[] args) {
+        Menu root = new Menu(1,"系统管理");
+        Menu menu2 = new Menu(2, "角色管理");
+        root.addChildMenu(menu2);
+        menu2.addChildMenu(new Menu(6,"固定角色"));
+        menu2.addChildMenu(new Menu(7,"临时授予"));
+
+        Menu 用户管理 = new Menu(3, "用户管理");
+        root.addChildMenu(用户管理);
+        用户管理.addChildMenu(new Menu(4,"临时用户"));
+        用户管理.addChildMenu(new Menu(5,"注册用户"));
+
+        root.printMenu();
+
+    }
+}

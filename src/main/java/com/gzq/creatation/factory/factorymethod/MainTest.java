@@ -1,7 +1,5 @@
 package com.gzq.creatation.factory.factorymethod;
 
-import com.gzq.creatation.factory.simplefactory.WuLinSimpleFactory;
-
 public class MainTest {
     public static void main(String[] args) {
         AbstractCarFactory carFactory = new WuLinVanCarFactory();
